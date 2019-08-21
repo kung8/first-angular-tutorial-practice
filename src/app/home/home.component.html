@@ -1,0 +1,22 @@
+<div [class.blue] = 'h1Style'>
+    <h1 >Home</h1>
+    
+    <button (click)='firstClick()'>Click</button>
+
+    <!-- <ul *ngIf="users">
+        <li *ngFor="let user of users.data">
+            <img [src]="user.avatar" [ngStyle]="{
+                'width':200px,
+                'height':200px
+            }">
+            <p>{{user.first_name}}{{user.last_name}}</p>
+        </li>
+    </ul> -->
+    <ul *ngIf="users">
+            <li *ngFor="let user of users.data">
+              <!-- <img [src]="user.avatar" alt='profile pic'> -->
+              <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSF75ZmmBF5B_i4iBBMzlQweM8AVAKk7gWj8PtKlfyfdjYJOcqIn-JpJKWDuaPeDhVn9rduRtiTnsVHmXPME2-rrI9xb0S7vVPbL2Yo1pLf_RJ7uDkQ0hwSSA&usqp=CAc">
+              <p>{{ user.first_name }} {{ user.last_name }}</p>
+            </li>
+          </ul>
+</div>
